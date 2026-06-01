@@ -1,0 +1,36 @@
+{
+  "name": "richard-feynman-showcase",
+  "version": "1.0.0",
+  "description": "An immersive, interactive digital biography celebrating the life, science, and legacy of Richard P. Feynman — Nobel Laureate, educator, and The Great Explainer.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . --port 3000",
+    "start": "npx serve . --port 3000",
+    "build": "echo 'Static site — no build step required'",
+    "preview": "npx serve . --port 4000",
+    "lint": "echo 'No linter configured for static site'"
+  },
+  "keywords": [
+    "feynman",
+    "physics",
+    "quantum",
+    "biography",
+    "interactive",
+    "three.js",
+    "gsap",
+    "chart.js",
+    "glassmorphism"
+  ],
+  "author": "Richard Feynman Showcase",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/richard-feynman-showcase"
+  }
+}
