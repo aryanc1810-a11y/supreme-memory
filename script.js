@@ -135,35 +135,6 @@ function initLoader() {
   }, 100);
 }
 
-// ─── CURSOR ──────────────────────────────────────────────────────
-
-function initCursor() {
-  if (window.innerWidth < 768) return;
-
-  const cursor = document.createElement('div');
-  cursor.id = 'custom-cursor';
-  const follower = document.createElement('div');
-  follower.id = 'cursor-follower';
-  document.body.appendChild(cursor);
-  document.body.appendChild(follower);
-
-  let mouseX = 0, mouseY = 0;
-  let followerX = 0, followerY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    gsap.to(cursor, { x: mouseX, y: mouseY, duration: 0.1 });
-  });
-
-  function animateFollower() {
-    followerX += (mouseX - followerX) * 0.12;
-    followerY += (mouseY - followerY) * 0.12;
-    gsap.set(follower, { x: followerX, y: followerY });
-    requestAnimationFrame(animateFollower);
-  }
-  animateFollower();
-
   // Scale on hover
   document.querySelectorAll('a, button, .timeline-card, .contribution-card, .book-card-wrapper').forEach(el => {
     el.addEventListener('mouseenter', () => {
