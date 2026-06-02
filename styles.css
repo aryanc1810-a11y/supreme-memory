@@ -44,20 +44,6 @@ body {
   cursor: none;
 }
 
-/* Custom cursor */
-#custom-cursor {
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #ffffff; /* White */
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
-  mix-blend-mode: screen;
-}
-
 #cursor-follower {
   position: fixed;
   width: 40px;
