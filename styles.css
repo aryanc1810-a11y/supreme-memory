@@ -50,7 +50,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ffffff; /* White */;
+  background: #ffffff; /* White */
   pointer-events: none;
   z-index: 99999;
   transform: translate(-50%, -50%);
